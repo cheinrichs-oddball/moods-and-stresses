@@ -1,7 +1,5 @@
 # Moods and Stresses
 
-![Mood Scale](moods.png)
-
 As a health care provider, we are concerned with the moods and stress levels of our patients. We want to examine our data to determine who is likely not doing well based on our readings.
 
 ## Data Dictionary
@@ -26,9 +24,3 @@ Read in the three data files, creating a user interface showing a dashboard with
 - Show the 5 longest streaks of consecutive bad days across the entire dataset. It should display the username and their consecutive bad day stream, ordered descending by length of streak.
 
 A "bad day" is defined as a user's mood being in the 1-2 range or where their mood is a 3 and stress level is in the 4-5 range.
-
----
-
-## Preparing for the Interview
-
-**[Next Steps...](../../next-steps-real-time.md)**
