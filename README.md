@@ -16,11 +16,24 @@ In the [moods.csv](moods.csv) file, we have a daily log of each user's mood. The
 
 the [stress.csv](stress.csv) file similarly contains a daily log of the person's stress level. A value of 1 indicates low stress, while a value of 5 indicates very stressed.
 
-## Product Requirements
+## Requirements
 
-Read in the three data files, creating a user interface showing a dashboard with the following:
+
+### Part 1:
+
+Use AI to read in the three data files using the language or framework of your choice.
+
+
+### Part 2:
+
+Without using AI, write a script or program to show:
 
 - All users who had two or more bad days in the week beginning 2017-05-07, displaying their username and the number of bad days that week. The list should be ordered descending by number of bad days.
-- Show the 5 longest streaks of consecutive bad days across the entire dataset. It should display the username and their consecutive bad day stream, ordered descending by length of streak.
+- The 5 longest streaks of consecutive bad days across the entire dataset. It should display the username and their consecutive bad day streak, ordered descending by length of streak.
 
 A "bad day" is defined as a user's mood being in the 1-2 range or where their mood is a 3 and stress level is in the 4-5 range.
+
+
+### Part 3:
+
+Using AI, build some sort of front-end component to visualize the results of both prompts from Part 2.
