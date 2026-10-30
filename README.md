@@ -1,26 +1,37 @@
 # Moods and Stresses
 
-As a health care provider, we are concerned with the moods and stress levels of our patients. We want to examine our data to determine who is likely not doing well based on our readings.
+This repository is the starting point for a two-part full-stack exercise. This README contains **Part 1 only**. Your interviewer will send you Part 2 after the application below is running.
 
-## Data Dictionary
+## Part 1: Build the Data Pipeline
 
-### Users
+Build a small full-stack application that reads the three CSV files in this repository and makes their data available to a user interface through a backend.
 
-The [users.csv](users.csv) file contains a list of users with `user_name` and `full_name` fields.
+You may use any languages, frameworks, libraries, database, or in-memory data structures you prefer. Choose tools that let you work comfortably and move quickly; production-grade styling, authentication, and deployment are not required.
 
-### Moods
+### AI use
 
-In the [moods.csv](moods.csv) file, we have a daily log of each user's mood. The `mood` column evaluates them between 1 (very bad) and 5 (great). If a user's value is missing on a given day, we should default to a 3 (neutral).
+You are encouraged to use AI tools during Part 1. You may use them to scaffold the application, select or install dependencies, parse the files, build the API and UI, debug errors, or complete any other Part 1 work.
 
-### Stress
+Do not attempt to predict or solve Part 2. When the application meets the completion criteria below, tell your interviewer. They will provide the next prompt and explain the tool-use rules for that part.
 
-the [stess.csv](stress.csv) file similarly contains a daily log of the person's stress level. A value of 1 indicates low stress, while a value of 5 indicates very stressed.
+### The data
 
-## Product Requirements
+- [users.csv](users.csv): `user_id`, `user_name`, `full_name`
+- [moods.csv](moods.csv): `user_id`, `date`, `mood`
+- [stress.csv](stress.csv): `user_id`, `date`, `stress`
 
-Read in the three data files, creating a user interface showing a dashboard with the following:
+The mood and stress files contain daily readings associated with the people in the users file. Some readings may be missing. You do not need to analyze, combine, or interpret the readings in Part 1.
 
-- All users who had two or more bad days in the week beginning 2017-05-07, displaying their username and the number of bad days that week. The list should be ordered descending by number of bad days.
-- Show the 5 longest streaks of consecutive bad days across the entire dataset. It should display the username and their consecutive bad day stream, ordered descending by length of streak.
+### Completion criteria
 
-A "bad day" is defined as a user's mood being in the 1-2 range or where their mood is a 3 and stress level is in the 4-5 range.
+Your Part 1 application is ready when:
+
+- It has both a backend and a user interface.
+- The backend reads all three CSV files.
+- The user interface makes at least one request to the backend and displays data returned by it.
+- The displayed result demonstrates that data from each of the three files is available. A few sample records, record counts, or another simple representation is sufficient.
+- You can explain the path the data takes from the CSV files to the screen.
+
+Keep the implementation simple. You will build on it in Part 2, so favor a structure you can understand and change easily.
+
+Once these criteria are met, stop and let your interviewer know you are ready for Part 2.
