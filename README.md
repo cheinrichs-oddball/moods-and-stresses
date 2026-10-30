@@ -14,7 +14,7 @@ In the [moods.csv](moods.csv) file, we have a daily log of each user's mood. The
 
 ### Stress
 
-the [stess.csv](stress.csv) file similarly contains a daily log of the person's stress level. A value of 1 indicates low stress, while a value of 5 indicates very stressed.
+the [stress.csv](stress.csv) file similarly contains a daily log of the person's stress level. A value of 1 indicates low stress, while a value of 5 indicates very stressed.
 
 ## Product Requirements
 
