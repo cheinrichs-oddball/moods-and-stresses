@@ -8,29 +8,21 @@ As a health care provider, we are concerned with the moods and stress levels of 
 
 The [users.csv](users.csv) file contains a list of users with `user_name` and `full_name` fields.
 
-- `user_id`: unique identifier for the user
-- `user_name`: the user's username
-- `full_name`: the user's full name
+`user_id`, `user_name`, `full_name`
 
 ### Moods
 
 In the [moods.csv](moods.csv) file, we have a daily log of each user's mood. The `mood` column evaluates them between 1 (very bad) and 5 (great). If a user's value is missing on a given day, we should default to a 3 (neutral).
 
-- `user_id`: identifies the user associated with the reading
-- `date`: date of the reading
-- `mood`: mood rating from 1 (very bad) to 5 (great)
+`user_id`, `date`, `mood`
 
 ### Stress
 
 the [stress.csv](stress.csv) file similarly contains a daily log of the person's stress level. A value of 1 indicates low stress, while a value of 5 indicates very stressed.
 
-- `user_id`: identifies the user associated with the reading
-- `date`: date of the reading
-- `stress`: stress rating from 1 (low stress) to 5 (very stressed)
+`user_id`, `date`, `stress`
 
 ## Requirements
-
-> > > > > > > Stashed changes
 
 ### Part 1:
 
